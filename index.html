@@ -100,27 +100,27 @@
                 name: "Em nên dừng lại",
                 singer: "ca si",
                 path: "./assets/music/em-nen-dung-lai.mp3",
-                image: "./assets/img/em-nen-dung-lai.jpg",
+                image: "./assets/img/em-my-1.jpg",
             }, {
                 name: "Tấm long son remix",
                 singer: "ca si",
                 path: "./assets/music/tam-long-son.mp3",
-                image: "./assets/img/tam-long-son.jpg",
+                image: "./assets/img/em-my-2.jpg",
             }, , {
                 name: "Chỉ Bằng Cái Gật Đầu",
                 singer: "ca si",
                 path: "./assets/music/chi-bang-cai-gat-dau.mp3",
-                image: "./assets/img/chi-bang-cai-gat-dau.jpg",
+                image: "./assets/img/em-my-3.jpg",
             }, , {
                 name: "Đổi tinh đổi áo",
                 singer: "ca si",
                 path: "./assets/music/doi-tinh-doi-ao.mp3",
-                image: "./assets/img/doi-tinh-doi-ao.jpg",
+                image: "./assets/img/em-my-4.jpg",
             }, , {
                 name: "Có duyên không nợ",
                 singer: "ca si",
                 path: "./assets/music/co-duyen-khong-no.mp3",
-                image: "./assets/img/co-duyen-khong-no.jpg",
+                image: "./assets/img/em-my-1.jpg",
             }, ],
             // <div class="song }>
             render: function() {
@@ -234,8 +234,10 @@
                 nextBtn.onclick = function() {
                     if (app.isRandom) {
                         app.playRandomSong();
+                        console.log("dugn");
                     } else {
                         app.nextSong();
+                        console.log("sai");
                     }
                     audio.play();
                     app.render();
